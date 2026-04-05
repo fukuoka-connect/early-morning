@@ -13,6 +13,8 @@
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="ベーカリー アーリーモーニング">
 <meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://fukuoka-connect.github.io/early-morning/images/hero.png">
+<meta name="twitter:image" content="https://fukuoka-connect.github.io/early-morning/images/hero.png">
 <link rel="canonical" href="https://fukuoka-connect.github.io/early-morning/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +48,7 @@ html{scroll-behavior:smooth}
 body{
   background:var(--bg);color:var(--text);
   font-family:"Noto Sans JP",sans-serif;
-  font-size:15px;line-height:1.85;font-weight:400;
+  font-size:16px;line-height:1.85;font-weight:400;
   -webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
 
@@ -193,6 +195,9 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 .sit-card h3{font-family:"Shippori Mincho",serif;font-size:17px;font-weight:700;margin-bottom:10px;color:var(--dark)}
 .sit-card p{font-size:13px;color:var(--text-light);line-height:1.85}
 @media(max-width:640px){.sit-grid{grid-template-columns:1fr}}
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--card-gap);max-width:900px;margin:0 auto}
+@media(max-width:900px){.flow-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.flow-grid{grid-template-columns:1fr}}
 
 /* MENU GRID */
 .menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--card-gap)}
@@ -295,7 +300,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg img-ph" style="font-size:16px;color:rgba(255,255,255,.3)">[hero.jpg: パンの写真]</div>
+  <div class="hero-bg"><img src="images/hero.png" alt="焼きたてのパン"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <span class="hero-badge">志免ブランド認定</span>
@@ -306,7 +311,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
       <span class="hero-tag">9:00 - 16:00</span>
       <span class="hero-tag">駐車場あり</span>
     </div>
-    <a href="tel:092-935-8720" class="cta-btn">092-935-8720</a>
+    <a href="tel:092-935-8720" class="cta-btn">お取り置きはこちら 092-935-8720</a>
     <p class="loss-text">※ パンがなくなり次第終了となります</p>
   </div>
 </section>
@@ -325,7 +330,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 <section id="concept" class="section bg-white reveal">
   <div class="container">
     <div class="concept-grid">
-      <div class="concept-img img-ph" style="aspect-ratio:4/3;border-radius:var(--radius)">[bread_main.jpg: 湯種パン断面]</div>
+      <div class="concept-img" style="aspect-ratio:4/3;border-radius:var(--radius)"><img src="images/bread_main.png" alt="湯種パンの断面"></div>
       <div class="concept-text">
         <p class="label">Our Method</p>
         <h2 class="mincho">湯種製法<span class="sm">という</span><br>手間<span class="sm">を</span>かけ<span class="sm">て</span>。</h2>
@@ -346,17 +351,17 @@ button{font:inherit;border:none;cursor:pointer;background:none}
     </div>
     <div class="sit-grid">
       <div class="sit-card">
-        <div class="sit-img img-ph" style="border-radius:16px">[scene_morning.jpg]</div>
+        <div class="sit-img" style="border-radius:16px"><img src="images/scene_morning.png" alt="朝の贅沢"></div>
         <h3>朝の贅沢に</h3>
         <p>焼きたてのパンで始まる朝。トースターで軽く温めれば、外はサクッと中はモチモチ。いつもの朝が特別になります。</p>
       </div>
       <div class="sit-card">
-        <div class="sit-img img-ph" style="border-radius:16px">[scene_gift.jpg]</div>
+        <div class="sit-img" style="border-radius:16px"><img src="images/scene_gift.png" alt="手土産に"></div>
         <h3>ちょっとした手土産に</h3>
         <p>ママ友の家に、実家に、職場に。「あのパン屋さんの」と喜ばれる、気取らない手土産。翌日でも美味しいから安心です。</p>
       </div>
       <div class="sit-card">
-        <div class="sit-img img-ph" style="border-radius:16px">[scene_snack.jpg]</div>
+        <div class="sit-img" style="border-radius:16px"><img src="images/scene_snack.png" alt="子どものおやつ"></div>
         <h3>子どものおやつに</h3>
         <p>地元の保育園にも給食パンを届けています。子どもが安心して食べられる、素材にこだわったパンです。</p>
       </div>
@@ -374,41 +379,77 @@ button{font:inherit;border:none;cursor:pointer;background:none}
     </div>
     <div class="menu-grid">
       <div class="card menu-card">
-        <div class="menu-card-img img-ph" style="aspect-ratio:1">[anpan.jpg]</div>
+        <div class="menu-card-img" style="aspect-ratio:1"><img src="images/anpan.png" alt="石炭あんぱん"></div>
         <div class="menu-card-body">
           <span class="menu-card-badge">志免ブランド</span>
           <div class="menu-card-name">石炭あんぱん</div>
+          <div class="menu-card-price">200円<span style="font-size:12px">（税込）</span></div>
           <div class="menu-card-desc">志免町の炭鉱の歴史をモチーフにした、真っ黒なあんぱん。中にはたっぷりのあんこ。志免ブランド認定品。</div>
         </div>
       </div>
       <div class="card menu-card">
-        <div class="menu-card-img img-ph" style="aspect-ratio:1">[bread_main.jpg]</div>
+        <div class="menu-card-img" style="aspect-ratio:1"><img src="images/bread_main.png" alt="湯種食パン"></div>
         <div class="menu-card-body">
           <span class="menu-card-badge">定番人気</span>
           <div class="menu-card-name">湯種食パン</div>
+          <div class="menu-card-price">350円<span style="font-size:12px">（税込）</span></div>
           <div class="menu-card-desc">看板商品。湯種製法でつくるモチモチ食パン。トーストでもそのままでも。翌日でも美味しい。</div>
         </div>
       </div>
       <div class="card menu-card">
-        <div class="menu-card-img img-ph" style="aspect-ratio:1">[パン写真]</div>
+        <div class="menu-card-img" style="aspect-ratio:1"><img src="images/bread_lineup.png" alt="カレーパン"></div>
         <div class="menu-card-body">
           <div class="menu-card-name">カレーパン</div>
+          <div class="menu-card-price">250円<span style="font-size:12px">（税込）</span></div>
           <div class="menu-card-desc">手づくりカレーをたっぷり包んだ揚げたてカレーパン。サクサクの衣と濃厚なカレーのハーモニー。</div>
         </div>
       </div>
       <div class="card menu-card">
-        <div class="menu-card-img img-ph" style="aspect-ratio:1">[パン写真]</div>
+        <div class="menu-card-img" style="aspect-ratio:1"><img src="images/bread_lineup.png" alt="クロワッサン"></div>
         <div class="menu-card-body">
           <div class="menu-card-name">クロワッサン</div>
+          <div class="menu-card-price">220円<span style="font-size:12px">（税込）</span></div>
           <div class="menu-card-desc">バターの香りが広がる、サクサクのクロワッサン。朝の一個に。</div>
         </div>
       </div>
       <div class="card menu-card">
-        <div class="menu-card-img img-ph" style="aspect-ratio:1">[bread_lineup.jpg]</div>
+        <div class="menu-card-img" style="aspect-ratio:1"><img src="images/bread_lineup.png" alt="季節のパン"></div>
         <div class="menu-card-body">
           <div class="menu-card-name">その他 季節のパン</div>
           <div class="menu-card-desc">季節の素材を使った限定パンも。来店のたびに新しい発見があります。</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW（段階的情報開示） -->
+<section class="section bg-alt reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="label">How to Buy</p>
+      <h2 class="mincho">お買い物の流れ</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--card-gap);max-width:900px;margin:0 auto;counter-reset:step">
+      <div class="card" style="text-align:center;counter-increment:step;position:relative">
+        <div style="font-family:'Shippori Mincho',serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:12px">1</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px">お電話で取り置き</h3>
+        <p style="font-size:13px;color:var(--text-light);line-height:1.8">お目当てのパンがあればお電話で取り置きOK。もちろん直接来店も大歓迎。</p>
+      </div>
+      <div class="card" style="text-align:center">
+        <div style="font-family:'Shippori Mincho',serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:12px">2</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px">ご来店</h3>
+        <p style="font-size:13px;color:var(--text-light);line-height:1.8">駐車場1台分あり。県道68号線を少し入った住宅街の中です。</p>
+      </div>
+      <div class="card" style="text-align:center">
+        <div style="font-family:'Shippori Mincho',serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:12px">3</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px">お好きなパンを選ぶ</h3>
+        <p style="font-size:13px;color:var(--text-light);line-height:1.8">トレーとトングでお好きなパンをお選びください。迷ったらお声がけを。</p>
+      </div>
+      <div class="card" style="text-align:center">
+        <div style="font-family:'Shippori Mincho',serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:12px">4</div>
+        <h3 style="font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px">お会計</h3>
+        <p style="font-size:13px;color:var(--text-light);line-height:1.8">現金でのお支払い。袋に入れてお渡しします。</p>
       </div>
     </div>
   </div>
@@ -420,7 +461,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
     <p class="label">Visit Us</p>
     <h2 class="mincho">焼きたて<span class="sm">の</span>香り<span class="sm">を、</span><br>お店<span class="sm">で</span>。</h2>
     <p class="cta-desc">パンの種類は日によって変わります。お目当てのパンがある方は、お電話でお取り置きも承ります。</p>
-    <a href="tel:092-935-8720" class="cta-btn">092-935-8720</a>
+    <a href="tel:092-935-8720" class="cta-btn">今日のパンを聞いてみる 092-935-8720</a>
     <p class="loss-text">※ 人気のパンは午前中に売り切れることがあります</p>
   </div>
 </section>
@@ -497,7 +538,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
     <p class="label">Visit</p>
     <h2 class="mincho" style="color:#fff;font-size:clamp(22px,3.5vw,36px);line-height:1.55;margin-bottom:20px">今日<span class="sm">の</span>パン、<br>焼<span class="sm">き</span>あがって<span class="sm">います。</span></h2>
     <p style="color:rgba(255,255,255,.55);max-width:480px;margin:0 auto 36px;font-size:15px">お取り置きやパンの種類のお問い合わせは、お電話で承ります。</p>
-    <a href="tel:092-935-8720" class="cta-btn">092-935-8720</a>
+    <a href="tel:092-935-8720" class="cta-btn">電話で取り置き 092-935-8720</a>
     <p class="loss-text">※ 人気商品は午前中に完売することがあります。お早めにお越しください</p>
   </div>
 </section>
