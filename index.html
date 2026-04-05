@@ -196,6 +196,10 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 .sit-card p{font-size:13px;color:var(--text-light);line-height:1.85}
 @media(max-width:640px){.sit-grid{grid-template-columns:1fr}}
 .flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--card-gap);max-width:900px;margin:0 auto}
+.flow-card{text-align:center}
+.flow-num{font-family:"Shippori Mincho",serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:14px}
+.flow-title{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:12px}
+.flow-desc{font-size:13px;color:var(--text-light);line-height:1.85}
 @media(max-width:900px){.flow-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.flow-grid{grid-template-columns:1fr}}
 
@@ -430,27 +434,11 @@ button{font:inherit;border:none;cursor:pointer;background:none}
       <p class="label">How to Buy</p>
       <h2 class="mincho">お買い物の流れ</h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--card-gap);max-width:900px;margin:0 auto;counter-reset:step">
-      <div class="card" style="text-align:center;counter-increment:step;position:relative">
-        <div style="font-family:'Shippori Mincho',serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:12px">1</div>
-        <h3 style="font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px">お電話で取り置き</h3>
-        <p style="font-size:13px;color:var(--text-light);line-height:1.8">お目当てのパンがあればお電話で取り置きOK。もちろん直接来店も大歓迎。</p>
-      </div>
-      <div class="card" style="text-align:center">
-        <div style="font-family:'Shippori Mincho',serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:12px">2</div>
-        <h3 style="font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px">ご来店</h3>
-        <p style="font-size:13px;color:var(--text-light);line-height:1.8">駐車場1台分あり。県道68号線を少し入った住宅街の中です。</p>
-      </div>
-      <div class="card" style="text-align:center">
-        <div style="font-family:'Shippori Mincho',serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:12px">3</div>
-        <h3 style="font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px">お好きなパンを選ぶ</h3>
-        <p style="font-size:13px;color:var(--text-light);line-height:1.8">トレーとトングでお好きなパンをお選びください。迷ったらお声がけを。</p>
-      </div>
-      <div class="card" style="text-align:center">
-        <div style="font-family:'Shippori Mincho',serif;font-size:40px;color:var(--accent);opacity:.35;line-height:1;margin-bottom:12px">4</div>
-        <h3 style="font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px">お会計</h3>
-        <p style="font-size:13px;color:var(--text-light);line-height:1.8">現金でのお支払い。袋に入れてお渡しします。</p>
-      </div>
+    <div class="flow-grid">
+      <div class="card flow-card"><div class="flow-num">1</div><h3 class="flow-title">お電話で取り置き</h3><p class="flow-desc">お目当てのパンがあればお電話で取り置きOK。もちろん直接来店も大歓迎。</p></div>
+      <div class="card flow-card"><div class="flow-num">2</div><h3 class="flow-title">ご来店</h3><p class="flow-desc">駐車場1台分あり。県道68号線を少し入った住宅街の中です。</p></div>
+      <div class="card flow-card"><div class="flow-num">3</div><h3 class="flow-title">お好きなパンを選ぶ</h3><p class="flow-desc">トレーとトングでお好きなパンをお選びください。迷ったらお声がけを。</p></div>
+      <div class="card flow-card"><div class="flow-num">4</div><h3 class="flow-title">お会計</h3><p class="flow-desc">現金でのお支払い。袋に入れてお渡しします。</p></div>
     </div>
   </div>
 </section>
