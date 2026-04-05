@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ベーカリー アーリーモーニング｜志免町の湯種パン専門店</title>
+<meta name="description" content="福岡県志免町の小さなパン屋。湯種製法でつくる「翌日でもモチモチ」のパン。志免ブランド認定「石炭あんぱん」。KBCテレビ取材2回。9:00-16:00／日祝定休。">
+<meta name="keywords" content="志免町,パン屋,ベーカリー,アーリーモーニング,湯種,石炭あんぱん,粕屋郡,福岡">
+<meta property="og:title" content="ベーカリー アーリーモーニング｜志免町の湯種パン専門店">
+<meta property="og:description" content="湯種製法でつくる「翌日でもモチモチ」のパン。志免ブランド認定「石炭あんぱん」。">
+<meta property="og:url" content="https://fukuoka-connect.github.io/early-morning/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="ベーカリー アーリーモーニング">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://fukuoka-connect.github.io/early-morning/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#FDFBF7;
+  --bg-alt:#FAF7F2;
+  --surface:#F5F0E8;
+  --dark:#3D3329;
+  --dark-mid:#5A4A3C;
+  --text:#4A3F35;
+  --text-light:#8A7D70;
+  --accent:#C4956A;
+  --accent-hover:#A87B52;
+  --accent-light:#F8EDE2;
+  --border:rgba(61,51,41,.08);
+  --shadow:rgba(61,51,41,.06);
+  --radius:24px;
+  --section-py:clamp(80px,10vw,140px);
+  --section-px:clamp(24px,5vw,80px);
+  --heading-mb:clamp(40px,5vw,64px);
+  --card-gap:clamp(20px,3vw,32px);
+  --card-pad:clamp(28px,4vw,40px);
+}
+
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:"Noto Sans JP",sans-serif;
+  font-size:15px;line-height:1.85;font-weight:400;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;border:none;cursor:pointer;background:none}
+
+.mincho{font-family:"Shippori Mincho",serif}
+.sm{font-size:.78em;font-weight:400}
+.label{
+  font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--accent);font-weight:600;margin-bottom:14px;
+}
+.container{max-width:1000px;margin:0 auto;padding-left:var(--section-px);padding-right:var(--section-px)}
+.section{padding-top:var(--section-py);padding-bottom:var(--section-py)}
+.section-heading{text-align:center;margin-bottom:var(--heading-mb)}
+.section-heading h2{font-size:clamp(24px,3.5vw,36px);font-weight:700;line-height:1.55;color:var(--dark)}
+.bg-white{background:var(--bg)}
+.bg-alt{background:var(--bg-alt)}
+.bg-surface{background:var(--surface)}
+.bg-dark{background:var(--dark);color:var(--surface)}
+.bg-dark h2,.bg-dark h3{color:#fff}
+
+.card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--radius);padding:var(--card-pad);
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px var(--shadow)}
+
+/* CTA */
+.cta-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--accent);color:#fff;font-weight:700;font-size:16px;
+  padding:18px 40px;border-radius:999px;
+  transition:background .2s,transform .15s;
+}
+.cta-btn:hover{background:var(--accent-hover);transform:scale(1.02)}
+.loss-text{font-size:13px;color:var(--text-light);margin-top:16px;opacity:.7}
+.bg-dark .loss-text{color:rgba(255,255,255,.45)}
+
+/* IMAGE PLACEHOLDER */
+.img-ph{
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;color:var(--text-light);text-align:center;padding:24px;
+  background:linear-gradient(135deg,var(--bg-alt),var(--surface));
+}
+
+/* NAV */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(253,251,247,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);height:64px;
+}
+.nav-inner{
+  max-width:1000px;margin:0 auto;padding:0 var(--section-px);
+  height:100%;display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo{font-family:"Shippori Mincho",serif;font-size:18px;font-weight:700;color:var(--dark)}
+.nav-logo small{
+  display:block;font-family:"Noto Sans JP",sans-serif;font-size:10px;
+  font-weight:400;color:var(--text-light);letter-spacing:.1em;
+}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-size:13px;color:var(--text-light);transition:color .2s}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{
+  background:var(--accent);color:#fff;font-size:13px;font-weight:700;
+  padding:8px 20px;border-radius:999px;transition:background .2s;
+}
+.nav-cta:hover{background:var(--accent-hover)}
+.nav-hamburger{display:none;color:var(--dark);padding:8px}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .nav-hamburger{display:block}
+}
+
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;z-index:99;background:#fff;border-bottom:1px solid var(--border);padding:20px var(--section-px) 24px}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;font-size:15px;color:var(--text-light);padding:14px 0;border-bottom:1px solid var(--border)}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu a:hover{color:var(--accent)}
+
+/* HERO */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  position:relative;overflow:hidden;background:var(--dark);
+}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(61,51,41,.85) 0%,rgba(61,51,41,.4) 60%,rgba(61,51,41,.2) 100%)}
+@media(max-width:768px){
+  .hero-overlay{background:linear-gradient(to top,rgba(61,51,41,.9) 0%,rgba(61,51,41,.4) 60%,transparent 100%)}
+}
+.hero-content{
+  position:relative;z-index:2;
+  padding:120px var(--section-px) clamp(80px,12vh,140px);
+  max-width:1000px;margin:0 auto;width:100%;
+}
+.hero-badge{
+  display:inline-block;background:var(--accent);color:#fff;
+  font-size:12px;font-weight:700;padding:6px 18px;
+  border-radius:999px;margin-bottom:28px;letter-spacing:.05em;
+}
+.hero h1{
+  font-size:clamp(28px,5vw,48px);font-weight:800;color:#fff;
+  line-height:1.55;margin-bottom:24px;max-width:560px;
+}
+.hero-sub{color:rgba(255,255,255,.7);font-size:clamp(14px,1.6vw,16px);line-height:1.9;max-width:480px;margin-bottom:36px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.hero-tag{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);
+  border-radius:999px;padding:8px 18px;font-size:13px;color:rgba(255,255,255,.8);
+}
+
+/* STRIP */
+.strip{background:var(--accent);color:#fff;padding:24px 0}
+.strip-inner{display:flex;justify-content:space-around;flex-wrap:wrap;gap:16px}
+.strip-item{text-align:center;padding:8px 24px}
+.strip-value{font-family:"Shippori Mincho",serif;font-size:clamp(24px,3.5vw,36px);font-weight:700;line-height:1.1}
+.strip-label{font-size:12px;opacity:.8;margin-top:4px}
+
+/* CONCEPT */
+.concept-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,64px);align-items:center}
+.concept-img{aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden}
+.concept-img img{width:100%;height:100%;object-fit:cover}
+.concept-text h2{font-size:clamp(22px,3vw,32px);font-weight:700;color:var(--dark);line-height:1.6;margin-bottom:24px}
+.concept-text p{font-size:15px;line-height:2.1;margin-bottom:16px}
+.concept-highlight{
+  display:inline-block;background:var(--accent-light);border-left:3px solid var(--accent);
+  color:var(--dark);font-weight:500;font-size:15px;
+  padding:14px 20px;border-radius:0 12px 12px 0;margin-top:12px;line-height:1.6;
+}
+@media(max-width:768px){.concept-grid{grid-template-columns:1fr}}
+
+/* SITUATION */
+.sit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--card-gap)}
+.sit-card{text-align:center}
+.sit-img{
+  aspect-ratio:4/3;border-radius:16px;overflow:hidden;margin-bottom:20px;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,.1));
+}
+.sit-img img{width:100%;height:100%;object-fit:cover}
+.sit-card h3{font-family:"Shippori Mincho",serif;font-size:17px;font-weight:700;margin-bottom:10px;color:var(--dark)}
+.sit-card p{font-size:13px;color:var(--text-light);line-height:1.85}
+@media(max-width:640px){.sit-grid{grid-template-columns:1fr}}
+
+/* MENU GRID */
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--card-gap)}
+.menu-card{padding:0;overflow:hidden}
+.menu-card-img{aspect-ratio:1;overflow:hidden}
+.menu-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.menu-card:hover .menu-card-img img{transform:scale(1.05)}
+.menu-card-body{padding:20px 24px 24px}
+.menu-card-badge{
+  display:inline-block;background:var(--accent);color:#fff;
+  font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;margin-bottom:10px;
+}
+.menu-card-name{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;margin-bottom:6px;color:var(--dark)}
+.menu-card-price{font-family:"Shippori Mincho",serif;font-size:20px;color:var(--accent);font-weight:700;margin-bottom:8px}
+.menu-card-desc{font-size:13px;color:var(--text-light);line-height:1.7}
+
+/* CTA BAND */
+.cta-band{
+  background:linear-gradient(135deg,var(--bg-alt) 0%,var(--surface) 100%);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  text-align:center;
+}
+.cta-band h2{font-size:clamp(22px,3vw,34px);font-weight:700;color:var(--dark);line-height:1.55;margin-bottom:20px}
+.cta-band .cta-desc{color:var(--text-light);max-width:500px;margin:0 auto 36px;font-size:15px}
+
+/* VOICE */
+.voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--card-gap)}
+.voice-card .stars{color:#F0C040;font-size:16px;letter-spacing:3px;margin-bottom:18px}
+.voice-card p{font-size:14px;line-height:1.9;margin-bottom:20px}
+.voice-footer{border-top:1px solid var(--border);padding-top:16px;font-size:13px;color:var(--text-light)}
+@media(max-width:640px){.voice-grid{grid-template-columns:1fr}}
+
+/* STORY */
+.story{max-width:700px;margin:0 auto;text-align:center}
+.story h2{font-size:clamp(20px,3vw,28px);font-weight:700;color:var(--dark);line-height:1.65;margin-bottom:28px}
+.story p{font-size:15px;line-height:2.1;margin-bottom:20px}
+
+/* SHOP INFO */
+.shop-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.shop-table{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:var(--card-pad)}
+.shop-table table{width:100%;border-collapse:collapse}
+.shop-table th,.shop-table td{padding:14px 0;border-bottom:1px solid var(--border);font-size:14px;vertical-align:top}
+.shop-table tr:last-child th,.shop-table tr:last-child td{border-bottom:none}
+.shop-table th{font-weight:700;color:var(--text-light);width:80px;padding-right:16px;white-space:nowrap}
+.shop-table a{color:var(--accent)}
+.shop-map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);min-height:320px}
+.shop-map iframe{width:100%;height:100%;min-height:320px;border:0}
+@media(max-width:768px){.shop-grid{grid-template-columns:1fr}}
+
+/* FOOTER */
+.footer{background:var(--dark);color:rgba(255,255,255,.45);padding:48px 0 32px;text-align:center}
+.footer-logo{font-family:"Shippori Mincho",serif;font-size:20px;color:#fff;margin-bottom:8px}
+.footer-info{font-size:13px;line-height:1.8;margin-bottom:20px}
+.footer-copy{font-size:12px;border-top:1px solid rgba(255,255,255,.08);padding-top:20px}
+
+/* MOBILE CTA */
+.mobile-cta{
+  display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;
+  background:rgba(253,251,247,.95);backdrop-filter:blur(12px);
+  border-top:1px solid var(--border);padding:12px 20px;
+}
+.mobile-cta .cta-btn{width:100%;justify-content:center;font-size:15px;padding:16px;min-height:48px}
+@media(max-width:768px){
+  .mobile-cta{display:block}
+  body{padding-bottom:80px}
+}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Bakery","name":"ベーカリー アーリーモーニング","url":"https://fukuoka-connect.github.io/early-morning/","telephone":"092-935-8720","address":{"@type":"PostalAddress","streetAddress":"別府1-1-37","addressLocality":"志免町","addressRegion":"福岡県","postalCode":"811-2244","addressCountry":"JP"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"16:00"}],"foundingDate":"2011-12","description":"湯種製法でつくる翌日でもモチモチのパン。志免ブランド認定「石炭あんぱん」。"}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">アーリーモーニング<small>bakery early morning</small></a>
+    <ul class="nav-links">
+      <li><a href="#concept">こだわり</a></li>
+      <li><a href="#menu">パン</a></li>
+      <li><a href="#shop">お店</a></li>
+    </ul>
+    <a href="tel:092-935-8720" class="nav-cta">092-935-8720</a>
+    <button class="nav-hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')" aria-label="メニュー">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="#concept" onclick="this.parentElement.classList.remove('open')">こだわり</a>
+  <a href="#menu" onclick="this.parentElement.classList.remove('open')">パン</a>
+  <a href="#shop" onclick="this.parentElement.classList.remove('open')">お店</a>
+  <a href="tel:092-935-8720" onclick="this.parentElement.classList.remove('open')">電話する</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg img-ph" style="font-size:16px;color:rgba(255,255,255,.3)">[hero.jpg: パンの写真]</div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">志免ブランド認定</span>
+    <h1 class="mincho">翌日<span class="sm">でも</span>モチモチ。<br>湯種<span class="sm">で</span>つくる、<br>毎日<span class="sm">の</span>パン。</h1>
+    <p class="hero-sub">志免町の住宅街で14年。夫婦ふたりで毎朝焼き上げる、湯種製法の手づくりパン。KBCテレビでも紹介された、地元で愛される小さなパン屋です。</p>
+    <div class="hero-tags">
+      <span class="hero-tag">湯種製法</span>
+      <span class="hero-tag">9:00 - 16:00</span>
+      <span class="hero-tag">駐車場あり</span>
+    </div>
+    <a href="tel:092-935-8720" class="cta-btn">092-935-8720</a>
+    <p class="loss-text">※ パンがなくなり次第終了となります</p>
+  </div>
+</section>
+
+<!-- STRIP -->
+<section class="strip">
+  <div class="container strip-inner">
+    <div class="strip-item"><div class="strip-value">14<span style="font-size:16px">年</span></div><div class="strip-label">創業から</div></div>
+    <div class="strip-item"><div class="strip-value">湯種</div><div class="strip-label">製法</div></div>
+    <div class="strip-item"><div class="strip-value">TV<span style="font-size:16px">×2回</span></div><div class="strip-label">KBC取材</div></div>
+    <div class="strip-item"><div class="strip-value">認定</div><div class="strip-label">志免ブランド</div></div>
+  </div>
+</section>
+
+<!-- CONCEPT -->
+<section id="concept" class="section bg-white reveal">
+  <div class="container">
+    <div class="concept-grid">
+      <div class="concept-img img-ph" style="aspect-ratio:4/3;border-radius:var(--radius)">[bread_main.jpg: 湯種パン断面]</div>
+      <div class="concept-text">
+        <p class="label">Our Method</p>
+        <h2 class="mincho">湯種製法<span class="sm">という</span><br>手間<span class="sm">を</span>かけ<span class="sm">て</span>。</h2>
+        <p>小麦粉を熱湯でこねる「湯種製法」。通常のパンづくりより一晩多く時間がかかりますが、この手間が、翌日でもモチモチの食感を生み出します。</p>
+        <p>市販のパンとは違う、しっとりとした生地の食感。一度食べたら、いつものパンには戻れなくなるかもしれません。</p>
+        <div class="concept-highlight">翌日食べても美味しい。それが湯種パンです。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SITUATION -->
+<section class="section bg-alt reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="label">Scenes</p>
+      <h2 class="mincho">こんなときに、アーリーモーニング。</h2>
+    </div>
+    <div class="sit-grid">
+      <div class="sit-card">
+        <div class="sit-img img-ph" style="border-radius:16px">[scene_morning.jpg]</div>
+        <h3>朝の贅沢に</h3>
+        <p>焼きたてのパンで始まる朝。トースターで軽く温めれば、外はサクッと中はモチモチ。いつもの朝が特別になります。</p>
+      </div>
+      <div class="sit-card">
+        <div class="sit-img img-ph" style="border-radius:16px">[scene_gift.jpg]</div>
+        <h3>ちょっとした手土産に</h3>
+        <p>ママ友の家に、実家に、職場に。「あのパン屋さんの」と喜ばれる、気取らない手土産。翌日でも美味しいから安心です。</p>
+      </div>
+      <div class="sit-card">
+        <div class="sit-img img-ph" style="border-radius:16px">[scene_snack.jpg]</div>
+        <h3>子どものおやつに</h3>
+        <p>地元の保育園にも給食パンを届けています。子どもが安心して食べられる、素材にこだわったパンです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section bg-white reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="label">Bread</p>
+      <h2 class="mincho">パンのご紹介</h2>
+      <p style="color:var(--text-light);font-size:14px;margin-top:16px">※ 日によってラインナップが変わります。売り切れ次第終了。</p>
+    </div>
+    <div class="menu-grid">
+      <div class="card menu-card">
+        <div class="menu-card-img img-ph" style="aspect-ratio:1">[anpan.jpg]</div>
+        <div class="menu-card-body">
+          <span class="menu-card-badge">志免ブランド</span>
+          <div class="menu-card-name">石炭あんぱん</div>
+          <div class="menu-card-desc">志免町の炭鉱の歴史をモチーフにした、真っ黒なあんぱん。中にはたっぷりのあんこ。志免ブランド認定品。</div>
+        </div>
+      </div>
+      <div class="card menu-card">
+        <div class="menu-card-img img-ph" style="aspect-ratio:1">[bread_main.jpg]</div>
+        <div class="menu-card-body">
+          <span class="menu-card-badge">定番人気</span>
+          <div class="menu-card-name">湯種食パン</div>
+          <div class="menu-card-desc">看板商品。湯種製法でつくるモチモチ食パン。トーストでもそのままでも。翌日でも美味しい。</div>
+        </div>
+      </div>
+      <div class="card menu-card">
+        <div class="menu-card-img img-ph" style="aspect-ratio:1">[パン写真]</div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">カレーパン</div>
+          <div class="menu-card-desc">手づくりカレーをたっぷり包んだ揚げたてカレーパン。サクサクの衣と濃厚なカレーのハーモニー。</div>
+        </div>
+      </div>
+      <div class="card menu-card">
+        <div class="menu-card-img img-ph" style="aspect-ratio:1">[パン写真]</div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">クロワッサン</div>
+          <div class="menu-card-desc">バターの香りが広がる、サクサクのクロワッサン。朝の一個に。</div>
+        </div>
+      </div>
+      <div class="card menu-card">
+        <div class="menu-card-img img-ph" style="aspect-ratio:1">[bread_lineup.jpg]</div>
+        <div class="menu-card-body">
+          <div class="menu-card-name">その他 季節のパン</div>
+          <div class="menu-card-desc">季節の素材を使った限定パンも。来店のたびに新しい発見があります。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA MID -->
+<section class="section cta-band reveal">
+  <div class="container" style="text-align:center">
+    <p class="label">Visit Us</p>
+    <h2 class="mincho">焼きたて<span class="sm">の</span>香り<span class="sm">を、</span><br>お店<span class="sm">で</span>。</h2>
+    <p class="cta-desc">パンの種類は日によって変わります。お目当てのパンがある方は、お電話でお取り置きも承ります。</p>
+    <a href="tel:092-935-8720" class="cta-btn">092-935-8720</a>
+    <p class="loss-text">※ 人気のパンは午前中に売り切れることがあります</p>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section class="section bg-alt reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="label">Voice</p>
+      <h2 class="mincho">お客様の声</h2>
+    </div>
+    <div class="voice-grid">
+      <div class="card voice-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>湯種の食パンがモチモチで感動しました。翌日食べてもパサつかないのが本当に嬉しい。もう市販の食パンには戻れません。</p>
+        <div class="voice-footer">志免町在住 40代女性</div>
+      </div>
+      <div class="card voice-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>石炭あんぱん、見た目のインパクトがすごい！志免町のお土産にぴったり。あんこもたっぷりで大満足です。</p>
+        <div class="voice-footer">粕屋町在住 30代女性</div>
+      </div>
+      <div class="card voice-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>住宅街の中にある隠れた名店。子どもに安心して食べさせられるパン屋さん。保育園でもお世話になっています。</p>
+        <div class="voice-footer">志免町在住 30代男性</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section bg-white reveal">
+  <div class="container">
+    <div class="story">
+      <p class="label">Our Story</p>
+      <h2 class="mincho">夫婦ふたりの、小さなパン屋。</h2>
+      <p>2011年、志免町の住宅街に小さなパン屋を開きました。大きな看板も、派手な広告もありません。あるのは「毎日食べても飽きない、本当に美味しいパンを届けたい」という想いだけ。</p>
+      <p>湯種製法は手間がかかります。でも、この手間を惜しまないことが、翌日でもモチモチのパンをつくる秘訣です。</p>
+      <p>地元の保育園の給食パンもつくらせていただいています。子どもたちの「おいしい！」が、私たちの何よりの喜びです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP INFO -->
+<section id="shop" class="section bg-alt reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="label">Shop Info</p>
+      <h2 class="mincho">お店のご案内</h2>
+    </div>
+    <div class="shop-grid">
+      <div class="shop-table">
+        <table>
+          <tr><th>店名</th><td>ベーカリー アーリーモーニング</td></tr>
+          <tr><th>住所</th><td>福岡県糟屋郡志免町別府1-1-37</td></tr>
+          <tr><th>電話</th><td><a href="tel:092-935-8720">092-935-8720</a></td></tr>
+          <tr><th>営業</th><td>9:00〜16:00（パンがなくなり次第終了）</td></tr>
+          <tr><th>定休日</th><td>日曜日・祝日</td></tr>
+          <tr><th>駐車場</th><td>あり（普通車1台分）</td></tr>
+          <tr><th>開業</th><td>2011年12月</td></tr>
+        </table>
+      </div>
+      <div class="shop-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324!2d130.48!3d33.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sja!2sjp!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="アーリーモーニング 地図"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section bg-dark" style="text-align:center">
+  <div class="container">
+    <p class="label">Visit</p>
+    <h2 class="mincho" style="color:#fff;font-size:clamp(22px,3.5vw,36px);line-height:1.55;margin-bottom:20px">今日<span class="sm">の</span>パン、<br>焼<span class="sm">き</span>あがって<span class="sm">います。</span></h2>
+    <p style="color:rgba(255,255,255,.55);max-width:480px;margin:0 auto 36px;font-size:15px">お取り置きやパンの種類のお問い合わせは、お電話で承ります。</p>
+    <a href="tel:092-935-8720" class="cta-btn">092-935-8720</a>
+    <p class="loss-text">※ 人気商品は午前中に完売することがあります。お早めにお越しください</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">アーリーモーニング</div>
+    <div class="footer-info">ベーカリー アーリーモーニング<br>福岡県糟屋郡志免町別府1-1-37<br>092-935-8720</div>
+    <div class="footer-copy">&copy; bakery early morning. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- MOBILE CTA -->
+<div class="mobile-cta">
+  <a href="tel:092-935-8720" class="cta-btn">電話する 092-935-8720</a>
+</div>
+
+<script>
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
